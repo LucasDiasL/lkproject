@@ -14,13 +14,19 @@ import lombok.*;
 public class Customer extends Identifiable {
 	
 	
-	@Id
-	@Column(length=80)
-	int name;
+	
+	@Column(length=80) @Required
+	String name;
+	
+	@Column(length=80) @Required
+	String idade;
+	
 
-	@Column(length =80)
-	@Required
-	String login;
+	@Column(length =80) @Required
+	String email;
+	
+	@Column(length=80) @Required
+	String senha;
 	
 	@Required
 	LocalDate birthday;
