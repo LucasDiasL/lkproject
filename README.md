@@ -55,7 +55,12 @@ public class Customer extends Identifiable {
     @Column(length=80) @Required
     String senha;
 
+    @Column(length=80) @Required
+    String gênero;
+
     @Required
     LocalDate birthday;
+
+
 }
 
